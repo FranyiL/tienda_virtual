@@ -12,7 +12,7 @@ $tituloTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['titul
 $infoTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['contenido'] : "";
 
 ?>
-<script src="https://www.paypal.com/sdk/js?client-id=<?=IDCLIENTE ?>">
+<script src="https://www.paypal.com/sdk/js?client-id=<?=IDCLIENTE ?>&currency=<?= CURRENCY ?>">
 </script>
 <script>
 paypal.Buttons({
