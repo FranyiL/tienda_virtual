@@ -250,14 +250,14 @@ paypal.Buttons({
                                         class="ml-space-sm" width="74" height="20">
                                 </label>
                             </div>
-                            <div>
+                            <div id="contraEntrega">
                                 <label for="contraentrega">
                                     <input type="radio" id="contraentrega" class="methodpago" name="payment-method"
                                         value="CT">
                                     <span>Contra Entrega</span>
                                 </label>
-                            </div>
-                            <div id="divtipopago" class="notblock">
+                                </div>
+                                <div id="divtipopago" class="notblock">
                                 <label for="listtipopago">Tipo de pago</label>
                                 <div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
                                     <select id="listtipopago" class="js-select2" name="listtipopago">

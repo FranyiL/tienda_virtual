@@ -307,7 +307,11 @@ function fntViewPago(){
 	let ciudad = document.querySelector("#txtCiudad").value;
 	if(direccion == "" || ciudad == ""){
 		document.querySelector('#divMetodoPago').classList.add("notblock");
-	}else{
+	}else if(ciudad != "Dajabón"){
+		document.querySelector('#divMetodoPago').classList.remove("notblock");
+		document.querySelector('#contraEntrega').style.display = "none";
+	}
+	else{
 		document.querySelector('#divMetodoPago').classList.remove("notblock");
 	}
 }

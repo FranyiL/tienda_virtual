@@ -90,7 +90,7 @@
                 $mail->Username   = 'toolsfordeveloper@gmail.com';          //SMTP username
                 $mail->Password   = '@dmin08a';                               //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-                $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
                 //Recipients
                 $mail->setFrom('toolsfordeveloper@gmail.com', 'Servidor Local');
@@ -290,7 +290,7 @@
     }
     
     function getTokenPaypal(){
-        $payLogin = curl_init(URLPAYPAL."/v2/oauth2/token");
+        $payLogin = curl_init(URLPAYPAL."/v1/oauth2/token");
         curl_setopt($payLogin, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($payLogin, CURLOPT_RETURNTRANSFER,TRUE);
         curl_setopt($payLogin, CURLOPT_USERPWD, IDCLIENTE.":".SECRET);

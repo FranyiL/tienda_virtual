@@ -1,6 +1,6 @@
 <?php 
-	//const BASE_URL = "http://localhost/tienda_virtual";
-	const BASE_URL = "http://localhost:84/tienda_virtual";
+	const BASE_URL = "http://localhost/tienda_virtual";
+	//const BASE_URL = "http://localhost:84/tienda_virtual";
 
 	//Zona horaria
 	date_default_timezone_set('America/Guatemala');
@@ -26,9 +26,10 @@
 	//Api PayPal
 	//SANDBOX PAYPAL
 	//const URLPAYPAL = "https://api-m.sandbox.paypal.com";
-	const URLPAYPAL = "https://www.sandbox.paypal.com";
+	//const URLPAYPAL = "https://www.sandbox.paypal.com";
+	const URLPAYPAL = "https://api-m.sandbox.paypal.com";
 	const IDCLIENTE = "AaVLcfzcOY1a3ACPS_VdnSSI4kcIA0rbI2nPF8SEruALD0FR5yqU2GStZ1CIpNkAO1D5R-bw4SyFWxx4";
-	const SECRET = "EE3zsDLNxWva0KbznujzWEBb9V3Xca38V5JHpRfBOR_q4YedhXiivHYXl6bXu-2Di1Xw2SVhNbDGJXB5";
+	const SECRET = "EEZuRYoJkwTIE9xBfirQsGCmGoFAu_DBJLgBQANiMeBsUgHRnPl-EJL7PBwti7Ff3VsXxnbAd80OdXzT";
 	//LIVE PAYPAL
 	//const URLPAYPAL = "https://api-m.paypal.com";
 	//const IDCLIENTE = "";
@@ -37,7 +38,7 @@
 	//Datos envio de correo
 	const NOMBRE_REMITENTE = "Tienda Virtual";
 	const EMAIL_REMITENTE = "no-reply@yinisport.com";
-	const NOMBRE_EMPESA = "Yinisport";
+	const NOMBRE_EMPESA = "YiniSport";
 	const WEB_EMPRESA = "https://www.instagram.com/yinisport/";
 
 	const DESCRIPCION = "La mejor tienda en línea con artículos de moda.";
